@@ -1,5 +1,5 @@
 FROM rabbitmq:management
-ENV AUTOCLUSTER_VERSION=0.8.0
+ENV AUTOCLUSTER_VERSION=0.10.0
 
 RUN mkdir /var/lib/rabbitmq/plugins
 ADD https://github.com/rabbitmq/rabbitmq-autocluster/releases/download/${AUTOCLUSTER_VERSION}/autocluster-${AUTOCLUSTER_VERSION}.ez /plugins/
